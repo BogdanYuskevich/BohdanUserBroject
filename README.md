@@ -31,7 +31,7 @@ POST http://localhost:8080/contacts
 
 Content-Type: application/json
 
-Authorization: Bearer(тестовий)eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5YXRzQGdtYWlsLmNvbSIsImlhdCI6MTY4ODY2MDI2OSwiZXhwIjoxNjg4NjYzODY5fQ.08K-_ws5vNyIfpPY9EA0t1skrHUTWlOPesEEglkNyBREkOwuT0xlcM0wxMmSMVyDPa1MuRCvB9uzWn_G9fxFBg
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5YXRzQGdtYWlsLmNvbSIsImlhdCI6MTY4ODY2MDI2OSwiZXhwIjoxNjg4NjYzODY5fQ.08K-_ws5vNyIfpPY9EA0t1skrHUTWlOPesEEglkNyBREkOwuT0xlcM0wxMmSMVyDPa1MuRCvB9uzWn_G9fxFBg
 
 
 {

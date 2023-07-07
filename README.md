@@ -1,42 +1,46 @@
-Для користувача з проектом "BohdanUserBroject" описано наступні дії:
+Для користувача "BohdanUserBroject" описано наступні дії:
 
-Реєстрація користувача:
+Приклади запитів:
 
--Відправити POST-запит на адресу http://localhost:8080/auth/register.
-
--Установити заголовок Content-Type зі значенням application/json.
-У тілі запиту передати наступні дані в форматі JSON:
-
-{
-  "firstName": "Bohdan",
-  "lastName": "Yuskevych",
-  "email": "yusk@gmail.com",
-  "password": "123"
-}
-
-Авторизація користувача:
-
--Відправити POST-запит на адресу http://localhost:8080/auth/login
-
--Установити заголовок Content-Type зі значенням application/json.
-У тілі запиту передати наступні дані в форматі JSON:
+1.Приклад реєстрації:
+```
+POST http://localhost:8080/auth/register
+Content-Type: application/json
 
 {
-  "username": "yusk@gmail.com",
-  "password": "123"
+  "firstName" : "Bohdan",
+  "lastName" : "Yusk",
+  "email" : "yusk@gmail.com",
+  "password" : "123"
 }
+```
 
-Додавання контакту:
-
--Відправити POST-запит на адресу http://localhost:8080/contacts
-
--Установити заголовок Content-Type зі значенням application/json.
-
--Установити заголовок авторизації Authorization зі значенням Bearer яке вам видала програма.
-У тілі запиту передати наступні дані в форматі JSON:
+2.Приклад логіну:
+```
+POST http://localhost:8080/auth/login
+Content-Type: application/json
 
 {
-  "name": "Bohdan",
-  "emails": ["xxx2345x@xxxx.com", "yyyy@yyyy.com"],
-  "phones": ["+380979607116"]
+  "username" : "yusk@gmail.com",
+  "password" : "123"
 }
+```
+3.Приклад відображення:
+```
+
+POST http://localhost:8080/contacts
+
+Content-Type: application/json
+
+Authorization: Bearer(тестовий)eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5YXRzQGdtYWlsLmNvbSIsImlhdCI6MTY4ODY2MDI2OSwiZXhwIjoxNjg4NjYzODY5fQ.08K-_ws5vNyIfpPY9EA0t1skrHUTWlOPesEEglkNyBREkOwuT0xlcM0wxMmSMVyDPa1MuRCvB9uzWn_G9fxFBg
+
+
+{
+    "name": "Bohdan",
+
+    "emails": ["xxx2345x@xxxx.com", "yyyy@yyyy.com"],
+
+    "phones": ["+380979607116"]
+
+}
+```

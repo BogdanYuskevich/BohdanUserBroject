@@ -39,7 +39,7 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5YXRzQGdtYWlsLmNvbSIsImlhd
 
     "emails": ["xxx2345x@xxxx.com", "yyyy@yyyy.com"],
 
-    "phones": ["+380979607116"]
+    "phones": ["+380990807203"]
 
 }
 ```

@@ -24,7 +24,7 @@ Content-Type: application/json
   "password" : "123"
 }
 ```
-3.Приклад відображення:
+3.Приклад створення нового контакту:
 ```
 
 POST http://localhost:8080/contacts
